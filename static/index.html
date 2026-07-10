@@ -12,7 +12,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta property="og:type" content="website">
   <meta property="og:title" content="3D Print Cookies — Food &amp; Culinary AM News &amp; Suppliers">
-  <meta property="og:description" content="3D Print Cookies: food, confectionery, and culinary additive manufacturing news, research, and a directory connecting kitchens to suppliers.">
+  <meta property="og:description" content="Embossed shortbreads, custom gingerbread lattices, and intricately shaped biscuits extruded from food-grade printers that turn dough into edible art.">
   <meta property="og:image" content="https://3dprintfood.com/images/01_hero_tray_intricately.png">
   <meta property="og:url" content="https://3dprintfood.com/">
   <meta name="twitter:card" content="summary_large_image">
@@ -49,16 +49,15 @@
   <div class="ed-main">
 
     <!-- Featured Story -->
-    <article class="ed-hero">
-      <img src="images/01_hero_tray_intricately.png" alt="Pastry & Confectionery">
-      <div class="ed-hero-overlay"></div>
-      <div class="ed-hero-content">
-        <span class="ed-badge">Pastry & Confectionery</span>
-        <h1><a href="#">Printing Cakes, Chocolate &amp; <span class="ed-logo-accent">Confections</span></a></h1>
-        <div class="ed-hero-meta">
-          <span>June 27, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>By PrintWire Editorial</span>
-        </div>
-        <p class="ed-hero-excerpt">Food-grade additive manufacturing pipes intricate chocolate, sugar, and dough geometries no pastry bag can match, from custom toppers to lattice confections.</p>
+    <article class="ed-hero-split">
+      <div class="ed-hero-split-text">
+        <span class="ed-badge">Cookie Design</span>
+        <h1>Precision-Printed <span class="ed-logo-accent">Cookies</span></h1>
+        <p class="ed-hero-excerpt">Embossed shortbreads, custom gingerbread lattices, and intricately shaped biscuits extruded from food-grade printers that turn dough into edible art.</p>
+        <a href="/articles/" class="ed-hero-cta">Explore Cookie Printing &rarr;</a>
+      </div>
+      <div class="ed-hero-visual">
+        <img src="images/01_hero_tray_intricately.png" alt="Cookie Design">
       </div>
     </article>
 
@@ -344,7 +343,7 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
     btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
   }
   const saved = localStorage.getItem('ed-theme');
-  setTheme(saved || 'dark');
+  setTheme(saved || 'light');
   btn.addEventListener('click', () => {
     const current = root.getAttribute('data-theme') || 'light';
     setTheme(current === 'dark' ? 'light' : 'dark');
